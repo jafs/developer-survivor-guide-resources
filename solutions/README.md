@@ -20,12 +20,23 @@ solutions/
 │   └── challenge1.ts     Desafío 1
 ├── block02/              Capítulos 7 a 12 y desafío 2
 ├── block03/              Capítulos 13 a 18 y desafío 3
+├── block04/              Capítulos 19 a 21 y desafío 4
 ├── exercise-runner.ts    Ejecutor de soluciones
 ├── package.json
 └── tsconfig.json
 ```
 
 Cada solución es un archivo independiente: puedes abrirlo, leerlo y ejecutarlo por separado.
+
+## Soluciones con tests
+
+Las soluciones de los ejercicios 21.1, 21.2 y 21.3 y la del desafío 4 llevan tests en el mismo archivo, escritos con `node:test`. Con Deno, `deno test` comprueba los tipos y ejecuta los tests:
+
+```bash
+deno test block04/exercise21.1.ts
+```
+
+Con Node.js, usa `node --test block04/exercise21.1.ts`. `deno run` no ejecuta los tests, así que en el desafío 4 sirve para ver solo la noche: `deno run block04/challenge4.ts`.
 
 ## Ejecutar una solución con Deno (recomendado)
 
